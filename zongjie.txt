@@ -1,0 +1,101 @@
+
+1.适用所有数据相关的项目
+2.$scope保存变量，变量声明在controller前。
+3.输出内容存在{{}}
+4.filter过滤格式|date:"yyyy年MM月dd日 HH:mm:ss"
+5.$http.get(
+	url,
+	{参数，
+	responseType:'json' 
+
+}
+	 ).then(function（res){alert(res.data)}
+	,function(){
+	alert("失败了")
+	})
+$http.get(
+	url,
+	{参数}).
+	success(function（res){alert(res.data)}
+	).error(function(){
+	alert("失败了")
+	})
+
+6.ng-if 将内容注释掉
+  ng-show 和 ng-hide是将内容显示隐藏
+7.{{表达式：兼容三目运算}}
+8.angular不允许数据重复
+9.ng-repeat \ng事件 赋值不可见面  解决：函数倒一下
+10.$scope.$watch
+11.$interval,$timeout
+
+
+https://www.baidu.com/s?ie=utf-8&mod=1&isbd=1&isid=901C4465E9442274&ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=%E4%B8%8B%E5%8E%A8%E6%88%BF&rsv_pq=b32bb7ae00026580&rsv_t=e74cFf56IR7HS7ZUGXMMP9fUppXzichkggKR1o9G3M8MScgVbAQNrwMP3yM&rqlang=cn&rsv_enter=1&rsv_sug3=4&rsv_sug1=2&rsv_sug7=100&rsv_sid=1451_21091_22037_21672&_ss=1&clist=&hsug=&csor=1&pstg=1&_cr1=26114
+https://www.baidu.com/s?ie=utf-8&csq=2&pstg=21&mod=2&isbd=1&cqid=a72865c200062dc0&istc=25668&ver=R2-xJAMG_3Xaje7ho4_DzO9X00h8XCqREIW&chk=58b74bbd&isid=a72865c200062dc0&ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=80035161_1_dg&wd=%E6%88%91&rsv_pq=8e54eb4000059838&rsv_t=1ae9MOU4oWxxmmuevSgFn3RYSTqtOEjbYRSSF%2FBExNvQMnBT2dkHUYpzGQWdcKnfF9wiAw&rqlang=cn&rsv_enter=1&rsv_sug3=6&rsv_sug1=8&rsv_sug7=100&rsv_sug2=0&inputT=85645&rsv_sug4=87213&_ck=25853.0.-1.-1.-1.-1.-1&rsv_stat=-2&rsv_sug7=100
+https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=%E6%88%91&sugmode=2&json=1&p=3&sid=&req=2&bs=%E6%88%91&pbs=%E6%88%91&csor=1&pwd=%E6%88%91&cb=jQuery110206086589040932193_1488407384195&_=1488407384203
+
+
+1.input输入class名控制div的class名  a.数组  b.直接写
+
+2.style的写法  a.直接写 b.json
+ 
+3. ng-if
+
+4.数组中能被整除的加背景色
+
+5.数组和json的输出
+
+6.ng-repeat \ng事件 赋值不可见面  解决：函数倒一下 练习：循环按钮 点击改变值
+
+7.tab切签
+
+8.监视和深度监视 练习：1.input值的改变   2.数组改变   3.angular内部改变和外部改变
+
+9.计时器
+
+10.jsonp练习：百度首页模糊搜索
+
+11.邮箱验证
+
+12.自定义过滤器  app.filter("name",function(){
+			alert("外层函数")  //好处：初始化一次
+				return function(canshu1,cansh2){
+			alert("内层函数")
+					return input+5
+				}
+			})
+     练习： arr=[{name:"路由器",count:5,price:-35},
+		 {name:"外卖",count:5,price:-35}，
+		 {name:"外卖",count:5,price:-35}
+		]
+     测试：优先级
+13.app.xxxx("名字",fucntion(){
+	//干什么的代码
+})   
+
+  指令directive:自定义标签、自定义组件，增强html功能
+  练习：
+app.dirctive("abc",function(){
+	var json={';
+		restrict:"E",  //约束 E：元素  A:属性   C:类    M:注释//需要加replace   <!--directive :abc -->必须有空格
+		template:"<span>abc</span>" //模板
+		}
+})
+
+
+<abc></abc> // <abc> <span>abc</span></abc>:template相关的东西放到标签里
+ 
+
+14.ng-model作用:a.绑定AngularJS 创建的变量
+		b.双向绑定，修改输入域的值，属性值同时变
+                c.验证输入
+		d.ng-model 指令基于它们的状态为 HTML 元素提供了 CSS 类
+		f.$invalid //如果输入的值是合法的则为 true
+		  $dirty   //如果值改变则为 true
+		  $touched //如果通过触屏点击则为 true
+	
+
+
+
+  
+
